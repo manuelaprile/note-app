@@ -1,0 +1,104 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.notes {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 800px;
+  display: grid;
+}
+
+.notes h1 {
+  text-align: center;
+}
+
+.notes li {
+  list-style: none;
+}
+
+.notes-container{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.actions {
+  display: flex;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add {
+  background: greenyellow;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.delete {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+}
+
+.create{
+  border: 0.5px solid green;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.createnote{
+  padding: 0 15px;
+
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form label{
+  margin: 10px 0;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid black;
+}
+
+.input:focus-visible{
+  border-radius: 0px;
+  outline: none;
+}
+
+@media(max-width:768px) {
+  .App {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
