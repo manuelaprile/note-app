@@ -1,3 +1,6 @@
+
+A Note App created with React and Node (Express), using MongoDB for the data storage.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
