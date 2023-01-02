@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import BASE_URL from '../url';
 
 function List() {
@@ -19,6 +19,7 @@ function List() {
         getData();
       })
   }
+
 
   useEffect(() => {
     getData()
@@ -40,6 +41,11 @@ function List() {
                 <li><strong>Date: </strong>{note.date}</li>
                 <div className='actions'>
                   <a className='delete' onClick={() => deleteNote(note.id)}>Delete</a>
+                </div>
+                <div className='actions'>
+                  <Link className='update' to={`update/${note.id}`}>
+                    Update
+                  </Link>
                 </div>
               </div>
             ))
